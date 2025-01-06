@@ -3,10 +3,11 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute.js'; // Import routes
-
+import cors from 'cors';  //connection for front end
 const app = express();
 
 app.use(bodyParser.json());
+app.use(cors());//this is connection for front end
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;

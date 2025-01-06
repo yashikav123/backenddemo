@@ -7,7 +7,7 @@ router.get("/",(req,res)=>{
 router.get("/profile",(req,res)=>{
     res.send("this is a profile page");
 })
-router.get('/delete',(req,res)=>{
+router.get('/delete',(req,res)=>{ 
     res.send("this is a delete page");
 })
 router.get("/:id",(req,res)=>{
